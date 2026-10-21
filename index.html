@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Práctico N°3 - File API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="tarjeta">
+        <p>Seleccionar Imagen:</p>
+        <button id="btnSubir">Subir Archivo</button>
+        <!-- Input de tipo file oculto para activar mediante el botón -->
+        <input type="file" id="inputImagen" accept="image/*" style="display: none;">
+    </div>
+
+    <div class="tarjeta" id="seccionResultado" style="display: none;">
+        <p id="infoNombre"></p>
+        <p id="infoTipo"></p>
+        <p id="infoTamano"></p>
+        <img id="vistaPrevia" src="" alt="Vista previa de la imagen">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
